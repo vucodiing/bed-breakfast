@@ -37,55 +37,59 @@ input:focus,
 button:focus {
   outline: none; }
 
-.header #logo-home-1 {
-  display: block; }
-.header #logo-home-2 {
-  display: none; }
-.header__menu {
-  background-color: #ffb400; }
-.header__menu--desktop img {
-  height: 30px; }
-.header__center {
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between; }
-.header .menu__icon {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  color: #fff; }
-  .header .menu__icon svg {
-    font-size: 20px;
-    margin: 0 10px;
-    cursor: pointer; }
-.header .menu__icon-cart {
-  position: relative; }
-  .header .menu__icon-cart a {
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
+  .header #logo-home-1 {
+    display: block; }
+  .header #logo-home-2 {
+    display: none; }
+  .header__menu {
+    background-color: #ffb400; }
+  .header__menu--desktop img {
+    height: 30px; }
+  .header__center {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; }
+  .header .menu__icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
     color: #fff; }
-.header .menu__icon-count {
-  background-color: #fff;
-  height: 15px;
-  width: 15px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 12px;
-  color: #999;
-  position: absolute;
-  top: -4px;
-  left: 20px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+    .header .menu__icon svg {
+      font-size: 20px;
+      margin: 0 10px;
+      cursor: pointer; }
+  .header .menu__icon-cart {
+    position: relative; }
+    .header .menu__icon-cart a {
+      color: #fff; }
+  .header .menu__icon-count {
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    top: -4px;
+    left: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .menu__flex {
   display: -webkit-box;
@@ -100,7 +104,9 @@ button:focus {
   top: 42px;
   left: 0;
   display: none;
-  background-color: #1e1e1ef2; }
+  padding: 20px 0 10px;
+  background-color: #1e1e1ef2;
+  z-index: 2; }
   .menu__list ul li {
     width: 150px; }
     .menu__list ul li a {
@@ -116,7 +122,8 @@ button:focus {
   padding: 15px;
   font-size: 13px; }
   .menu__list li a {
-    color: #fff; }
+    color: #fff;
+    font-weight: 600; }
   .menu__list li:hover {
     cursor: pointer; }
 
@@ -145,6 +152,13 @@ button:focus {
     .footer__main h2 {
       font-size: 18px;
       font-weight: 500; }
+    .footer__main a {
+      color: #999;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .footer__main a:hover {
+        color: #c59d5f; }
   .footer__contact-icon svg {
     font-size: 30px;
     cursor: pointer; }
@@ -157,7 +171,7 @@ button:focus {
       font-size: 30px;
       font-weight: 700; }
     .footer .vintage p {
-      padding: 30px 0 50px;
+      padding: 5px 0 50px;
       font-size: 14px; }
     .footer .vintage__icon img {
       padding: 0 10px; }
@@ -194,11 +208,12 @@ button:focus {
         background-color: #c59d5f; }
     .footer__search label.error {
       position: absolute;
-      top: 55px;
-      left: 19px;
+      top: 50%;
+      left: 50%;
       color: red;
       font-size: 13px;
-      font-style: italic; }
+      font-style: italic;
+      transform: translate(-50%, 100%); }
   .footer__social {
     padding: 30px 0; }
     .footer__social svg {
@@ -211,5 +226,7 @@ button:focus {
       transition: 0.3s ease-in-out; }
       .footer__social a:hover {
         color: #c59d5f; }
+  .footer__contact-icon {
+    padding-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */
