@@ -197,6 +197,7 @@ button:focus {
   }
   &__search {
     @include center();
+    position: relative;
 
     input {
       height: 56px;
@@ -216,6 +217,12 @@ button:focus {
       &:hover {
         background-color: $hover-color;
       }
+    }
+    label.error {
+      position: absolute;
+      top: 55px;
+      left: 19px;
+      @include error-validate();
     }
   }
   &__social {

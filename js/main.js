@@ -28,3 +28,22 @@ $(document).ready(function () {
 //     }
 //   });
 // });
+
+// validate
+// for email home page
+$(document).ready(function () {
+  $(".footer__search").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Please enter email",
+        email: "Email not true",
+      },
+    },
+  });
+});
