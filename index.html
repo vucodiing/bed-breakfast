@@ -49,7 +49,8 @@
       <!-- menu -->
       <section class="header__menu">
         <div class="container">
-          <div class="header__menu-desktop">
+          <!--menu on desktop > 1199px-->
+          <div class="header__menu-desktop d-none d-xl-block">
             <div class="row header__center">
               <!-- logo -->
               <div class="col-auto">
@@ -202,12 +203,140 @@
               </div>
             </div>
           </div>
+
+          <!--menu on tablet and mobile-->
+          <div class="header__bar d-xl-none">
+            <img
+              src="./images/logo-home-1.png"
+              alt="logo home page"
+              id="logo-home-1-mobile"
+            />
+            <img
+              src="./images/logo-home-2.png"
+              alt="logo home page"
+              id="logo-home-2-mobile"
+            />
+            <i class="far fa-bars" id="btn-mobile"></i>
+          </div>
+          <div class="header__mobile">
+            <div class="header__mobile-title"><p>Menu</p></div>
+            <ul class="menu_1st">
+              <li>
+                MENU 1
+                <ul class="menu_2nd">
+                  <li>
+                    MENU 2
+                    <ul class="menu_3td">
+                      <li>MENU 3</li>
+                      <li>MENU 3</li>
+                      <li>MENU 3</li>
+                    </ul>
+                  </li>
+                  <li>MENU 2</li>
+                  <li>MENU 2</li>
+                </ul>
+              </li>
+              <li>MENU 1</li>
+              <li>MENU 1</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- banner -->
     </div>
 
+    <section class="home-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="contact__info">
+              <div class="contact__info-top">
+                <h1>CONTACT US</h1>
+                <p>
+                  Etiam convallis, felis quis dapibus dictum, libero mauris
+                  luctus nunc, non fringilla purus ligula non justo. Non ligula
+                  non justo.
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <h3>BARCELONA</h3>
+                  <a
+                    style="color: #999999"
+                    href="https://www.google.com/maps/place/Carrer+de+la+Diputaci%C3%B3,+316,+08009+Barcelona,+Spain/@41.3943376,2.1704294,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!2sBarcelona,+Spain!3b1!8m2!3d41.3850639!4d2.1734035!3m4!1s0x12a4a2ef19d6d3d3:0x2c8581cade97958a!8m2!3d41.3943336!4d2.1726181?_ga=2.151007417.1616392348.1616635257-1602379502.1616635257"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >198 West 21th Street, 721 Barcelona 20020</a
+                  >
+                  <span style="color: #999999">Email: fivestar@qode.com</span>
+                  <a style="color: #999999" href="tel:+887678906"
+                    >Phone: +88 (0) 101 0000 000</a
+                  >
+                </div>
+                <div class="col-6">
+                  <h3>NEW YORK</h3>
+                  <a
+                    style="color: #999999"
+                    href="https://www.google.com/maps/place/Carrer+de+la+Diputaci%C3%B3,+316,+08009+Barcelona,+Spain/@41.3943376,2.1704294,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!2sBarcelona,+Spain!3b1!8m2!3d41.3850639!4d2.1734035!3m4!1s0x12a4a2ef19d6d3d3:0x2c8581cade97958a!8m2!3d41.3943336!4d2.1726181?_ga=2.151007417.1616392348.1616635257-1602379502.1616635257"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >198 West 21th Street, 721 New York 20020</a
+                  >
+                  <span style="color: #999999">Email: fivestar@qode.com</span>
+                  <a style="color: #999999" href="tel:+887678906"
+                    >Phone: +88 (0) 101 0000 000</a
+                  >
+                </div>
+              </div>
+              <div class="contact__info-bottom">
+                <h3>CONNECT WITH US</h3>
+                <div class="contact__info-social">
+                  <a href="https://www.twitter.com"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="https://www.facebook.com"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://www.tripadvisor.com"
+                    ><i class="fab fa-tripadvisor"></i
+                  ></a>
+                  <a href="https://www.instagram.com"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <form action="" method="post">
+              <input type="text" name="name" placeholder="Enter your name" />
+              <input type="text" name="email" placeholder="Enter your email" />
+              <textarea
+                name="message"
+                placeholder="Enter your message"
+              ></textarea>
+              <a href="#"><button>BOOK NOW</button></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-fresh">
+      <h1>FRESH CROISSANTS</h1>
+      <div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the when an unknown printer took
+        </p>
+      </div>
+      <div>
+        <a href="#"><button>BOOK NOW</button></a>
+      </div>
+    </section>
     <!--start footer-->
     <div class="footer">
       <div class="container">
