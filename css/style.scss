@@ -46,6 +46,9 @@ button:focus {
 }
 
 // for header ---------------------------------->
+#logo-home-2 {
+  display: none;
+}
 .header {
   background-color: $main-color;
   position: fixed;
@@ -401,4 +404,17 @@ button:focus {
 
 .home-contact {
   margin-top: 500px;
+  h3 {
+    font-size: 16px;
+    color: #000;
+  }
+}
+.contact__info-top {
+  h1 {
+    font-size: 26px;
+    color: #000;
+  }
+  p {
+    padding-bottom: 30px;
+  }
 }
