@@ -30,9 +30,13 @@ ul {
   list-style: none;
   margin-bottom: 0;
 }
-img:focus {
-  outline: none;
+img {
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
 }
+
 p {
   margin-bottom: 0;
 }
@@ -41,168 +45,227 @@ button:focus {
   outline: none;
 }
 
-// for header
+// for header ---------------------------------->
 .header {
-  // header menu desktop
+  background-color: $main-color;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
-  #logo-home-1,
-  #logo-home-1-mobile {
-    display: block;
+  .header__logo img {
+    width: 70%;
   }
-  #logo-home-2,
-  #logo-home-2-mobile {
-    display: none;
-  }
-  #logo-home-1-mobile,
-  #logo-home-2-mobile {
-    height: 30px;
-  }
-  &__menu {
-    background-color: $main-color;
-  }
-  &__menu--desktop {
-    img {
-      height: 30px;
-    }
-  }
-  &__center {
-    padding: 10px 0;
-    display: flex;
+  .header__flex {
+    @include d-flex();
+    align-items: center;
     justify-content: space-between;
   }
-  .menu__icon {
-    @include d-flex;
+  &__menu {
+    @include d-flex();
     align-items: center;
+  }
+  &__nav {
+    font-size: 26px;
+    padding: 15px 0;
     color: #fff;
-    svg {
-      font-size: 20px;
-      margin: 0 10px;
-      cursor: pointer;
-    }
+    cursor: pointer;
   }
-  .menu__icon-cart {
-    position: relative;
-
-    a {
-      color: #fff;
-    }
-  }
-  .menu__icon-count {
-    background-color: #fff;
-    height: 15px;
-    width: 15px;
-    @include border-radius(50%);
-    text-align: center;
-    font-size: 12px;
-    color: #999;
+  &__menu-mobile {
     position: absolute;
-    top: -4px;
-    left: 20px;
-    @include center;
+    width: 100%;
+    left: -2000px;
+    @include transition();
   }
-}
-.menu__flex {
-  @include d-flex();
-  align-items: center;
-}
-.menu__list ul {
-  position: absolute;
-  top: 42px;
-  left: 0;
-  display: none;
-  padding: 20px 0 10px;
-  background-color: #1e1e1ef2;
-  z-index: 2;
-  li {
-    width: 150px;
-    a {
+  &__menu-icon svg {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  &__menu-icon {
+    @include d-flex();
+    align-items: center;
+  }
+  &__contact {
+    position: fixed;
+    top: 0;
+    right: -405px;
+    width: 405px;
+    height: 100%;
+    min-height: 100%;
+    padding: 66px 65px 36px;
+    background-color: #0a090a;
+    text-align: left;
+    overflow: hidden;
+    visibility: hidden;
+    box-sizing: border-box;
+    box-shadow: -3px 0 3px #0000000a;
+    @include transition();
+    z-index: 1001;
+  }
+  &__contact-close {
+    position: absolute;
+    top: 52px;
+    color: $main-color;
+    z-index: 1002;
+    right: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  &__contact-logo {
+    margin: 45px 50px 95px 50px;
+  }
+  &__contact-search {
+    border: 1px solid #999;
+    height: 52px;
+    button,
+    input {
+      background-color: transparent;
+      float: left;
+      line-height: 52px;
+      border: none;
       color: #999;
     }
-  }
-}
-
-.menu__list {
-  .menu_2nd-none:hover a {
-    color: $hover-color;
-  }
-  li {
-    float: left;
-    width: 100px;
-    line-height: 1.5em;
-    position: relative;
-
-    padding: 15px;
-    font-size: 13px;
-    a {
-      color: #fff;
-      font-weight: 600;
-    }
-    &:hover {
+    button {
+      width: 50px;
+      padding: 0;
+      text-align: center;
       cursor: pointer;
+      @include transition();
+      &:hover {
+        color: $hover-color;
+      }
+    }
+    input {
+      width: calc(100% - 50px);
+      padding: 0 0 0 20px;
     }
   }
+  &__contact-contact,
+  &__contact-follow {
+    padding-top: 50px;
+    text-align: center;
+    h2 {
+      font-size: 18px;
+      color: #fff;
+    }
+    a {
+      color: #999;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+  &__contact-follow svg {
+    font-size: 20px;
+    margin: 20px 15px;
+  }
 }
-.menu__list ul ul {
-  left: 150px;
-  top: 0;
+.shopping-bag-group {
+  position: relative;
+  span {
+    position: absolute;
+    top: -2px;
+    left: 19px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333132;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+  }
 }
-.menu__list ul ul.a1 {
-  display: block;
-}
-.menu__list .menu_2nd {
-  display: flex;
-  justify-content: space-between;
-  &:hover,
-  &:hover a {
+
+// for menu desktop
+.menu-main li.scroll > a {
+  color: #fff;
+  &:hover {
     color: $hover-color;
   }
 }
-.menu__list .menu_2nd::after {
-  content: "\f054";
-  font-family: "Font Awesome 5 Pro";
+.menu-main li {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 100px;
+  a {
+    color: #999;
+    padding: 0px 12px 0px 12px;
+    line-height: 50px;
+    display: block;
+    font-size: 13px;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  span {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    line-height: 50px;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+.menu-main ul {
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  position: absolute;
+  background-color: #1e1e1ef2;
+  left: 24px;
+}
+.menu-main ul a {
+  width: 200px;
+  text-align: start;
+}
+.menu-main ul ul {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  left: 200px;
+  top: 0;
 }
 
 // for menu tablet and mobile
-.header__bar {
-  @include d-flex();
-  padding: 5px 0;
-  justify-content: space-between;
-  align-items: center;
-  svg {
-    font-size: 30px;
-  }
-}
 
-.header__mobile {
+.menu-main-mobile {
+  padding: 15px;
   background-color: #000;
-  width: 100vw;
-  position: absolute;
-  padding: 10px;
-  top: 40px;
-  left: -2000px;
-  transition: 0.5s;
-
-  .menu_2nd,
-  .menu_3td {
-    display: none;
-  }
-  .menu_2nd {
-    padding-left: 10px;
-  }
-  .menu_3td {
-    padding-left: 20px;
-  }
-}
-.header__mobile-title {
-  text-align: center;
-  p {
-    font-size: 20px;
+  h1 {
+    color: $main-color;
+    font-size: 22px;
     border-bottom: 1px solid $hover-color;
   }
+  a {
+    color: #999;
+    font-size: 16px;
+  }
+  li {
+    position: relative;
+    z-index: 10;
+    padding: 10px 0;
+  }
+  li span {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    padding-left: 100%;
+  }
 }
-// for footer
+.menu-main-mobile ul {
+  padding-left: 10px;
+  display: none;
+}
+// for footer ---------------------------------->
 .footer {
   text-align: center;
   background-color: #333132;
@@ -242,6 +305,7 @@ button:focus {
     &__icon {
       img {
         padding: 0 10px;
+        width: auto;
       }
     }
     padding-bottom: 40px;
@@ -333,4 +397,8 @@ button:focus {
       opacity: 0.8;
     }
   }
+}
+
+.home-contact {
+  margin-top: 500px;
 }

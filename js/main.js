@@ -1,10 +1,49 @@
 $(document).ready(function () {
-  $(".menu__list li").hover(
+  $(".menu-main li").hover(
     function () {
       $(this).find("ul:first").slideDown(500);
+      $(this).find("ul:first").css("display", "flex");
     },
     function () {
-      $(this).find("ul:first").hide(300);
+      $(this).find("ul:first").hide(600);
+    }
+  );
+});
+
+$(document).ready(function () {
+  $("#span-1").click(
+    function () {
+      $(".span-1").toggle(500);
+    }
+  );
+  $("#span-2").click(
+    function () {
+      $(".span-2").toggle(500);
+    }
+  );
+  $("#span-3").click(
+    function () {
+      $(".span-3").toggle(500);
+    }
+  );
+  $("#span-4").click(
+    function () {
+      $(".span-4").toggle(500);
+    }
+  );
+  $("#span-5").click(
+    function () {
+      $(".span-5").toggle(500);
+    }
+  );
+  $("#span-6").click(
+    function () {
+      $(".span-6").toggle(500);
+    }
+  );
+  $("#span-7").click(
+    function () {
+      $(".span-7").toggle(500);
     }
   );
 });
@@ -16,28 +55,22 @@ $(document).ready(function () {
 
     // change color menu desktop
     if (pos_body > 30) {
-      $("#logo-home-1").css("display", "none");
-      $("#logo-home-2").css("display", "block");
-      $("#logo-home-1-mobile").css("display", "none");
-      $("#logo-home-2-mobile").css("display", "block");
-      $(".scroll").css("color", "#000");
-      $(".menu__icon-count").css("background-color", "#c59d5f");
-      $(".header__menu").css("background-color", "#fff");
-      $(".menu__icon svg").css("color", "#000");
-      $(".menu__icon-count span").css("color", "#fff");
+
     } else {
-      $("#logo-home-1").css("display", "block");
-      $("#logo-home-2").css("display", "none");
-      $("#logo-home-1-mobile").css("display", "block");
-      $("#logo-home-2-mobile").css("display", "none");
-      $(".scroll").css("color", "#fff");
-      $(".menu__icon-count").css("background-color", "#fff");
-      $(".header__menu").css("background-color", "#ffb400");
-      $(".menu__icon svg").css("color", "#fff");
-      $(".menu__icon-count span").css("color", "#999");
+
     }
   });
 });
+
+// show header contact
+$(document).ready(function () {
+  $("#show-contact-menu").click(function () {
+    $(".header__contact").css({ "right": "0", "visibility": "visible" });
+  })
+  $(".header__contact-close").click(function () {
+    $(".header__contact").css({ "right": "-405px", "visibility": "hidden" });
+  })
+})
 
 // validate
 // for email home page
@@ -60,26 +93,13 @@ $(document).ready(function () {
 
 // show menu tablet and mobile
 $(document).ready(function () {
-  $("#btn-mobile").click(function () {
-    if ($(".header__mobile").css("left") == "-2000px") {
-      $(".header__mobile").css("left", "0");
+  $(".header__nav").click(function () {
+    if ($(".header__menu-mobile").css("left") == "-2000px") {
+      $(".header__menu-mobile").css("left", "0");
     } else {
-      $(".header__mobile").css("left", "-2000px");
+      $(".header__menu-mobile").css("left", "-2000px");
     }
   });
 });
 ////////
 
-$(document).ready(function () {
-  $(".menu_1st").click(function () {
-    if ($(this).find("ul:first").is(":hidden")) {
-      $(this).find("ul:first").slideDown(500);
-    } else {
-      $(this).find("ul:first").slideUp(500);
-    }
-  });
-
-  // $(".menu_2nd").click(function () {
-  //   $(this).find("ul:first").slideDown(500);
-  // });
-});
