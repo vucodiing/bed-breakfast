@@ -1,8 +1,8 @@
 @import "./mixin.scss";
 
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 *,
 *:before,
 *:after {
@@ -60,6 +60,7 @@ label {
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0px 0px 10px 0px;
   .header__logo img {
     width: 70%;
   }
@@ -530,7 +531,6 @@ label {
   &__item {
     background-color: #fff;
     padding: 40px 45px 56px 55px;
-    margin: 0 5px;
   }
   &__desc {
     p {
@@ -571,6 +571,9 @@ label {
         background-color: #1e1e1e;
       }
     }
+  }
+  .slick-slide {
+    margin: 0 15px;
   }
 }
 
@@ -749,6 +752,11 @@ label {
     h1 {
       font-family: "Pacifico", cursive;
       font-size: 39px;
+      animation: aniName 1s;
+      -moz-animation: aniName 1s;
+      -webkit-animation: aniName 1s;
+      -o-animation: aniName 1s;
+      position: relative;
     }
   }
   .slick-next {
@@ -760,5 +768,42 @@ label {
   .slick-prev:before,
   .slick-next:before {
     font-size: 50px;
+  }
+}
+
+// key frame
+@keyframes aniName {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-moz-keyframes aniName {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes aniName {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-o-keyframes aniName {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
   }
 }

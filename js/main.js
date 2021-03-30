@@ -46,7 +46,7 @@ $(document).ready(function () {
       $("#logo-home-1").css("display", "none");
       $("#logo-home-2").css("display", "block");
       // change color of menu
-      $(".scroll a").css("color", "#000");
+      $(".scroll").css("color", "#000");
       // change color of header
       $(".header").css("background-color", "#fff");
       // change color icon search, shopping, menu contact
@@ -56,12 +56,13 @@ $(document).ready(function () {
         "background-color": "#ffb400",
         color: "#fff",
       });
+      $(".header__nav").css("color", "#000");
     } else {
       //change logo
       $("#logo-home-1").css("display", "block");
       $("#logo-home-2").css("display", "none");
       // change color of menu
-      $(".scroll a").css("color", "#fff");
+      $(".scroll").css("color", "#fff");
       // change color of header
       $(".header").css("background-color", "#ffb400");
       // change color icon search, shopping, menu contact
@@ -71,6 +72,7 @@ $(document).ready(function () {
         "background-color": "#fff",
         color: "#000",
       });
+      $(".header__nav").css("color", "#fff");
     }
   });
 });

@@ -1,6 +1,3 @@
-html {
-  scroll-behavior: smooth; }
-
 *,
 *:before,
 *:after {
@@ -51,7 +48,8 @@ label {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 0px 0px 10px 0px; }
   .header .header__logo img {
     width: 70%; }
   .header .header__flex {
@@ -464,8 +462,7 @@ label {
   padding-top: 50px; }
   .testimonial__item {
     background-color: #fff;
-    padding: 40px 45px 56px 55px;
-    margin: 0 5px; }
+    padding: 40px 45px 56px 55px; }
   .testimonial__desc p {
     color: #999;
     font-size: 15px;
@@ -496,6 +493,8 @@ label {
         width: 50px;
         height: 1px;
         background-color: #1e1e1e; }
+  .testimonial .slick-slide {
+    margin: 0 15px; }
 
 .introduce {
   padding: 50px 0; }
@@ -638,7 +637,12 @@ label {
   width: 100%; }
   .banner__item-text h1 {
     font-family: "Pacifico", cursive;
-    font-size: 39px; }
+    font-size: 39px;
+    animation: aniName 1s;
+    -moz-animation: aniName 1s;
+    -webkit-animation: aniName 1s;
+    -o-animation: aniName 1s;
+    position: relative; }
 .banner .slick-next {
   right: 100px; }
 .banner .slick-prev {
@@ -646,5 +650,26 @@ label {
 .banner .slick-prev:before,
 .banner .slick-next:before {
   font-size: 50px; }
+
+@keyframes aniName {
+  0% {
+    top: 200px; }
+  100% {
+    top: 0px; } }
+@-moz-keyframes aniName {
+  0% {
+    top: 200px; }
+  100% {
+    top: 0px; } }
+@-webkit-keyframes aniName {
+  0% {
+    top: 200px; }
+  100% {
+    top: 0px; } }
+@-o-keyframes aniName {
+  0% {
+    top: 200px; }
+  100% {
+    top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
