@@ -1,4 +1,4 @@
-// menu toggle desktop
+// menu toggle desktop -------------------------------------->
 $(document).ready(function () {
   $(".menu-main li").hover(
     function () {
@@ -10,7 +10,7 @@ $(document).ready(function () {
     }
   );
 });
-// menu toggle mobile and tablet
+// menu toggle mobile and tablet -------------------------------------->
 $(document).ready(function () {
   $("#span-1").click(function () {
     $(".span-1").toggle(500);
@@ -35,7 +35,7 @@ $(document).ready(function () {
   });
 });
 
-// scroll page
+// scroll page -------------------------------------->
 $(document).ready(function () {
   $(window).scroll(function (event) {
     let pos_body = $("html,body").scrollTop();
@@ -75,7 +75,7 @@ $(document).ready(function () {
   });
 });
 
-// show header contact
+// show header contact -------------------------------------->
 $(document).ready(function () {
   $("#show-contact-menu").click(function () {
     $(".header__contact").css({ right: "0", visibility: "visible" });
@@ -85,9 +85,10 @@ $(document).ready(function () {
   });
 });
 
-// validate
-// for email home page
+// validate -------------------------------------->
+
 $(document).ready(function () {
+  // for email home page
   $(".footer__search").validate({
     rules: {
       email: {
@@ -102,9 +103,37 @@ $(document).ready(function () {
       },
     },
   });
+
+  // for contact home page
+  $("#form-contact").validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+    messages: {
+      name: "Please enter name",
+      email: {
+        required: "Please enter email",
+        email: "Email not true",
+      },
+    },
+  });
+
+  // for search in 404 page
+  $(".page404__search").validate({
+    rules: {
+      page404: "required",
+    },
+    messages: {
+      page404: "Please enter something...",
+    },
+  });
 });
 
-// show menu tablet and mobile
+// show menu tablet and mobile -------------------------------------->
 $(document).ready(function () {
   $(".header__nav").click(function () {
     if ($(".header__menu-mobile").css("left") == "-2000px") {
@@ -114,4 +143,67 @@ $(document).ready(function () {
     }
   });
 });
-////////
+
+// slick for testimonial -------------------------------------->
+$(".testimonial").slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+// slick for banner
+$(function () {
+  $(".bannerSlider").slick({
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  });
+});
+
+// masonry -------------------------------------->
+$(function () {
+  var $grid = $(".masonry-grid").masonry({});
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry("layout");
+  });
+});
+
+//  daterangepicker -------------------------------------->
+$(function () {
+  $('input[name="checkIn"]').daterangepicker({
+    singleDatePicker: true,
+  });
+
+  $('input[name="checkIn"]').on("apply.daterangepicker", function (ev, picker) {
+    $(this).val(picker.startDate.format("MM/DD/YYYY"));
+  });
+});
