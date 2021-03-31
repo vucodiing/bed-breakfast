@@ -181,7 +181,7 @@
     font-size: 18px;
     padding-top: 15px; }
   .story__list {
-    padding-bottom: 30px; }
+    padding: 20px 0; }
     .story__list h1 {
       font-size: 16px;
       line-height: 20px;
@@ -219,7 +219,7 @@
     -webkit-animation: spanIllustrator 4s;
     -o-animation: spanIllustrator 4s;
     position: absolute;
-    left: 428px; }
+    left: 75%; }
   .story span#photoshop {
     animation: spanPhotoshop 4s;
     -moz-animation: spanPhotoshop 4s;
@@ -252,22 +252,22 @@
   0% {
     left: 0; }
   100% {
-    left: 428px; } }
+    left: 75%; } }
 @-moz-keyframes spanIllustrator {
   0% {
     left: 0; }
   100% {
-    left: 428px; } }
+    left: 75%; } }
 @-webkit-keyframes spanIllustrator {
   0% {
     left: 0; }
   100% {
-    left: 428px; } }
+    left: 75%; } }
 @-o-keyframes spanIllustrator {
   0% {
     left: 0; }
   100% {
-    left: 428px; } }
+    left: 75%; } }
 @keyframes photoshop {
   0% {
     width: 0%; }

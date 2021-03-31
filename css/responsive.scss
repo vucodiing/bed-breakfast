@@ -139,6 +139,12 @@
     padding-bottom: 15px;
   }
 }
+
+@media (max-width: 767px) {
+  .cake__position img {
+    width: 100%;
+  }
+}
 @media (max-width: 991px) {
   .home-wellcome {
     .home-tabs {
