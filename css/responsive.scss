@@ -56,6 +56,19 @@
   }
 }
 
+@media (min-width: 992px) {
+  .cake__position {
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 @media (min-width: 1140px) {
   .banner {
     .banner__item-text {
@@ -94,6 +107,21 @@
   .gallery-image {
     .grid-hover {
       opacity: 0;
+    }
+  }
+  .about-vintage__flex {
+    display: flex;
+  }
+  .hospitality {
+    display: flex;
+    &__item {
+      img {
+        width: auto;
+      }
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

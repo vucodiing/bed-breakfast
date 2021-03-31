@@ -33,6 +33,15 @@
     font-size: 17px; }
   .banner .banner__item-text h1 {
     font-size: 63px; } }
+@media (min-width: 992px) {
+  .cake__position {
+    position: relative; }
+    .cake__position img {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); } }
 @media (min-width: 1140px) {
   .banner .banner__item-text p {
     font-size: 20px; }
@@ -59,7 +68,20 @@
     float: left; }
 
   .gallery-image .grid-hover {
-    opacity: 0; } }
+    opacity: 0; }
+
+  .about-vintage__flex {
+    display: flex; }
+
+  .hospitality {
+    display: flex; }
+    .hospitality__item {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .hospitality__item img {
+        width: auto; } }
 @media (min-width: 1201px) {
   .gallery-image__item {
     width: 25%;
