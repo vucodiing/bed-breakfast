@@ -213,6 +213,26 @@
     -moz-animation: photoshop 4s;
     -webkit-animation: photoshop 4s;
     -o-animation: photoshop 4s; }
+  .story__list-percentFeatures {
+    height: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #c59d5f;
+    width: 96%;
+    animation: features 5s;
+    -moz-animation: features 5s;
+    -webkit-animation: features 5s;
+    -o-animation: features 5s; }
+  .story__list-percentPHP {
+    height: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #c59d5f;
+    width: 77%;
+    animation: php 4s;
+    -moz-animation: php 4s;
+    -webkit-animation: php 4s;
+    -o-animation: php 4s; }
   .story span#illustrator {
     animation: spanIllustrator 4s;
     -moz-animation: spanIllustrator 4s;
@@ -226,7 +246,21 @@
     -webkit-animation: spanPhotoshop 4s;
     -o-animation: spanPhotoshop 4s;
     position: absolute;
-    left: 366px; }
+    left: 63%; }
+  .story span#features {
+    animation: spanFeatures 5s;
+    -moz-animation: spanFeatures 5s;
+    -webkit-animation: spanFeatures 5s;
+    -o-animation: spanFeatures 5s;
+    position: absolute;
+    left: 90%; }
+  .story span#PHP {
+    animation: spanPHP 4s;
+    -moz-animation: spanPHP 4s;
+    -webkit-animation: spanPHP 4s;
+    -o-animation: spanPHP 4s;
+    position: absolute;
+    left: 72%; }
 
 @keyframes illustrator {
   0% {
@@ -290,23 +324,103 @@
     width: 68%; } }
 @keyframes spanPhotoshop {
   0% {
-    left: 0; }
+    left: 0%; }
   100% {
-    left: 366px; } }
+    left: 63%; } }
 @-moz-keyframes spanPhotoshop {
   0% {
-    left: 0; }
+    left: 0%; }
   100% {
-    left: 366px; } }
+    left: 63%; } }
 @-webkit-keyframes spanPhotoshop {
   0% {
-    left: 0; }
+    left: 0%; }
   100% {
-    left: 366px; } }
+    left: 63%; } }
 @-o-keyframes spanPhotoshop {
   0% {
-    left: 0; }
+    left: 0%; }
   100% {
-    left: 366px; } }
+    left: 63%; } }
+@keyframes features {
+  0% {
+    width: 0%; }
+  100% {
+    width: 96%; } }
+@-moz-keyframes features {
+  0% {
+    width: 0%; }
+  100% {
+    width: 96%; } }
+@-webkit-keyframes features {
+  0% {
+    width: 0%; }
+  100% {
+    width: 96%; } }
+@-o-keyframes features {
+  0% {
+    width: 0%; }
+  100% {
+    width: 96%; } }
+@keyframes spanFeatures {
+  0% {
+    left: 0%; }
+  100% {
+    left: 90%; } }
+@-moz-keyframes spanFeatures {
+  0% {
+    left: 0%; }
+  100% {
+    left: 90%; } }
+@-webkit-keyframes spanFeatures {
+  0% {
+    left: 0%; }
+  100% {
+    left: 90%; } }
+@-o-keyframes spanFeatures {
+  0% {
+    left: 0%; }
+  100% {
+    left: 90%; } }
+@keyframes php {
+  0% {
+    width: 0%; }
+  100% {
+    width: 77%; } }
+@-moz-keyframes php {
+  0% {
+    width: 0%; }
+  100% {
+    width: 77%; } }
+@-webkit-keyframes php {
+  0% {
+    width: 0%; }
+  100% {
+    width: 77%; } }
+@-o-keyframes php {
+  0% {
+    width: 0%; }
+  100% {
+    width: 77%; } }
+@keyframes spanPHP {
+  0% {
+    left: 0%; }
+  100% {
+    left: 72%; } }
+@-moz-keyframes spanPHP {
+  0% {
+    left: 0%; }
+  100% {
+    left: 72%; } }
+@-webkit-keyframes spanPHP {
+  0% {
+    left: 0%; }
+  100% {
+    left: 72%; } }
+@-o-keyframes spanPHP {
+  0% {
+    left: 0%; }
+  100% {
+    left: 72%; } }
 
 /*# sourceMappingURL=about.css.map */

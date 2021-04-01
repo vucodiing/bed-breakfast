@@ -56,7 +56,7 @@ $(document).ready(function () {
         "background-color": "#ffb400",
         color: "#fff",
       });
-      $(".header__nav").css("color", "#000");
+      $(".header__nav svg").css("color", "#000");
     } else {
       //change logo
       $("#logo-home-1").css("display", "block");
@@ -72,7 +72,7 @@ $(document).ready(function () {
         "background-color": "#fff",
         color: "#000",
       });
-      $(".header__nav").css("color", "#fff");
+      $(".header__nav svg").css("color", "#fff");
     }
   });
 });
