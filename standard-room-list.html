@@ -703,12 +703,14 @@
                 </div>
               </div>
               <div class="rooms-priceRange">
-                <p>Price range: From $200 to $450</p>
-                <input type="range" min="1" max="100" value="100" />
+                <p>Price from $0 to $<span id="price"></span></p>
+                <input type="range" class="form-range" min="0" max="100" value="100" id="input-rooms">
+                </div>
+                <div class="rooms-btn">
+                  <button type="submit">FILTER RESULT</button>
+                </div>
               </div>
-              <div class="rooms-btn">
-                <button type="submit">FILTER RESULT</button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -803,6 +805,7 @@
     <script src="./plugins/slick/slick.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Main JS-->
+    <script src="./js/single-room.js"></script>
     <script src="./js/main.js"></script>
     <script>
       AOS.init({

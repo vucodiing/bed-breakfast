@@ -11,3 +11,13 @@ $(".slide-list").slick({
   centerMode: true,
   focusOnSelect: true,
 });
+
+$("#input-rooms").mousemove(function () {
+  let a = $("#input-rooms").val();
+  $("#price").html(a);
+});
+
+$("#input-rooms").click(function () {
+  let a = $("#input-rooms").val();
+  $("#price").html(a);
+});

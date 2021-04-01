@@ -1,7 +1,7 @@
 @import "./mixin.scss";
 
 .roomsList-breadcrumb {
-  margin: 57px 0 30px 0;
+  margin: 51px 0 30px 0;
   padding: 30px 0;
   background-color: #f6f6f6;
   position: relative;
@@ -101,6 +101,7 @@
     margin-bottom: 15px;
     label {
       font-size: 13px;
+      cursor: pointer;
     }
     select,
     input {

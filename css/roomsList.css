@@ -1,5 +1,5 @@
 .roomsList-breadcrumb {
-  margin: 57px 0 30px 0;
+  margin: 51px 0 30px 0;
   padding: 30px 0;
   background-color: #f6f6f6;
   position: relative; }
@@ -92,7 +92,8 @@
     padding: 0 15px;
     margin-bottom: 15px; }
     .rooms-filter__chooseList label {
-      font-size: 13px; }
+      font-size: 13px;
+      cursor: pointer; }
     .rooms-filter__chooseList select,
     .rooms-filter__chooseList input {
       width: 100%;

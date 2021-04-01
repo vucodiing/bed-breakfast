@@ -7,7 +7,7 @@
   border-bottom: none;
 }
 .single-breadcrumb {
-  margin: 57px 0 30px 0;
+  margin: 51px 0 30px 0;
   padding: 30px 0;
   background-color: #f6f6f6;
   position: relative;
@@ -209,6 +209,7 @@
     }
     label {
       width: 100%;
+      cursor: pointer;
       input {
         padding-right: 5px;
       }
