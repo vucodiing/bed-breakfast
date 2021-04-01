@@ -34,7 +34,8 @@ p {
 input:focus,
 button:focus,
 textarea:focus,
-.slick-slide:focus {
+.slick-slide:focus,
+select:focus {
   outline: none; }
 
 label {
@@ -650,6 +651,23 @@ label {
 .banner .slick-prev:before,
 .banner .slick-next:before {
   font-size: 50px; }
+
+#span-1,
+#span-2,
+#span-3,
+#span-4,
+#span-5,
+#span-6,
+#span-7 {
+  color: #999; }
+  #span-1:hover,
+  #span-2:hover,
+  #span-3:hover,
+  #span-4:hover,
+  #span-5:hover,
+  #span-6:hover,
+  #span-7:hover {
+    color: #c59d5f; }
 
 @keyframes aniName {
   0% {

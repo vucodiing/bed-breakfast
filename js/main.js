@@ -276,3 +276,23 @@ $(function () {
     $(this).val(picker.startDate.format("MM/DD/YYYY"));
   });
 });
+
+// rating
+
+$(function () {
+  $("#accommodation").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#meals").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#transport").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#destination").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#overall").barrating({
+    theme: "fontawesome-stars",
+  });
+});

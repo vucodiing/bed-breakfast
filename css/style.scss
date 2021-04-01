@@ -43,7 +43,8 @@ p {
 input:focus,
 button:focus,
 textarea:focus,
-.slick-slide:focus {
+.slick-slide:focus,
+select:focus {
   outline: none;
 }
 label {
@@ -768,6 +769,20 @@ label {
   .slick-prev:before,
   .slick-next:before {
     font-size: 50px;
+  }
+}
+
+// for span arrows
+#span-1,
+#span-2,
+#span-3,
+#span-4,
+#span-5,
+#span-6,
+#span-7 {
+  color: #999;
+  &:hover {
+    color: $hover-color;
   }
 }
 
