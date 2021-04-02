@@ -5,7 +5,7 @@
   border-bottom: none; }
 
 .single-breadcrumb {
-  margin: 57px 0 30px 0;
+  margin: 51px 0 30px 0;
   padding: 30px 0;
   background-color: #f6f6f6;
   position: relative; }
@@ -204,7 +204,8 @@
       font-size: 15px;
       line-height: 27px; }
     .reservation__checkbox label {
-      width: 100%; }
+      width: 100%;
+      cursor: pointer; }
       .reservation__checkbox label input {
         padding-right: 5px; }
   .reservation__btn {

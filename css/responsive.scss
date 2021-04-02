@@ -41,6 +41,11 @@
   .contact-newsletter input {
     width: 500px;
   }
+  //fix footer in gallery page
+
+  .gallery-footer {
+    padding-top: 60px;
+  }
 }
 
 @media (min-width: 720px) {

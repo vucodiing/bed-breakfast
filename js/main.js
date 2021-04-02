@@ -296,3 +296,18 @@ $(function () {
     theme: "fontawesome-stars",
   });
 });
+
+// toggle comment in blog detail page
+$("#reply-01").click(function () {
+  $("#for-reply-01").toggle(300);
+});
+$("#reply-02").click(function () {
+  $("#for-reply-01").toggle(300);
+});
+
+$("#reply-03").click(function () {
+  $("#for-reply-02").toggle(300);
+});
+$("#reply-04").click(function () {
+  $("#for-reply-02").toggle(300);
+});

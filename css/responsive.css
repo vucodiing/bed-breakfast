@@ -27,7 +27,10 @@
 
   .page404__search input,
   .contact-newsletter input {
-    width: 500px; } }
+    width: 500px; }
+
+  .gallery-footer {
+    padding-top: 60px; } }
 @media (min-width: 720px) {
   .banner .banner__item-text p {
     font-size: 17px; }
