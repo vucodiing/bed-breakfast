@@ -24,6 +24,15 @@
 // for main navTabs
 .main__navTabs ul {
   padding-bottom: 40px;
+  li a {
+    color: #999;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  li a.active {
+    color: $main-color;
+  }
 }
 .font-style {
   font-size: 16px;

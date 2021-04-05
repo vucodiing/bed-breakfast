@@ -18,6 +18,12 @@
 
 .main__navTabs ul {
   padding-bottom: 40px; }
+  .main__navTabs ul li a {
+    color: #999; }
+    .main__navTabs ul li a:hover {
+      color: #c59d5f; }
+  .main__navTabs ul li a.active {
+    color: #ffb400; }
 
 .font-style, .information h1,
 .amenities h1,

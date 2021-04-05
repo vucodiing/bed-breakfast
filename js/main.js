@@ -158,21 +158,15 @@ $(".testimonial").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
       },
     },
     {
+      // to 0 up 768 show 1 slide
       breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -195,8 +189,8 @@ $(".testimonials-slick").slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
-  arrows: true,
   autoplay: true,
+  arrows: false,
   autoplaySpeed: 2000,
   responsive: [
     {
@@ -267,13 +261,19 @@ $(function () {
 });
 
 //  daterangepicker -------------------------------------->
+
 $(function () {
   $('input[name="checkIn"]').daterangepicker({
     singleDatePicker: true,
-  });
-
-  $('input[name="checkIn"]').on("apply.daterangepicker", function (ev, picker) {
-    $(this).val(picker.startDate.format("MM/DD/YYYY"));
+    startDate: new Date(),
+    showDropdowns: true,
+    timePicker: true,
+    timePicker24Hour: true,
+    timePickerIncrement: 10,
+    autoUpdateInput: true,
+    locale: {
+      format: "DD/MM/YYYY",
+    },
   });
 });
 

@@ -40,6 +40,18 @@ img {
 p {
   margin-bottom: 0;
 }
+select {
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance: none;
+  appearance: none;
+}
+/*for IE10+*/
+select::-ms-expand {
+  display: none;
+}
+
 input:focus,
 button:focus,
 textarea:focus,
@@ -694,6 +706,13 @@ label {
 }
 
 // for home filter
+.home-filter__item {
+  svg {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+  }
+}
 .home-filter-inner {
   padding: 30px;
   margin-bottom: 30px;
