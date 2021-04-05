@@ -666,13 +666,11 @@
                           <input
                             type="text"
                             name="name"
-                            id=""
                             placeholder="Your name"
                           />
                           <input
                             type="text"
                             name="email"
-                            id=""
                             placeholder="Your email"
                           />
                         </div>
@@ -699,7 +697,7 @@
               <div class="reservation__input">
                 <div class="reservation__input-list">
                   <label for="">EMAIL:</label>
-                  <input type="text" name="email" id="" />
+                  <input type="text" name="email" />
                 </div>
                 <div class="reservation__input-list">
                   <span class="reservation-calendar">
@@ -752,19 +750,19 @@
               <div class="reservation__checkbox">
                 <h3>EXTRA SERVICES:</h3>
                 <label for="reservation-services">
-                  <input type="checkbox" name="" id="reservation-services" />
+                  <input type="checkbox" id="reservation-services" />
                   Air Conditioner
                 </label>
                 <label for="reservation-conditioner">
-                  <input type="checkbox" name="" id="reservation-conditioner" />
+                  <input type="checkbox" id="reservation-conditioner" />
                   Free Internet
                 </label>
                 <label for="reservation-internet">
-                  <input type="checkbox" name="" id="reservation-internet" />
+                  <input type="checkbox" id="reservation-internet" />
                   LCD Television
                 </label>
                 <label for="reservation-tv">
-                  <input type="checkbox" name="" id="reservation-tv" />
+                  <input type="checkbox" id="reservation-tv" />
                   Microwave
                 </label>
               </div>
@@ -870,16 +868,5 @@
     <!-- Main JS-->
     <script src="./js/main.js"></script>
     <script src="./js/single-room.js"></script>
-    <script>
-      AOS.init({
-        offset: 400,
-        duration: 1000,
-      });
-      document.onreadystatechange = function () {
-        if (document.readyState == "complete") {
-          AOS.refresh();
-        }
-      };
-    </script>
   </body>
 </html>

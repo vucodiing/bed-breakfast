@@ -99,7 +99,7 @@ label {
     width: 405px;
     height: 100%;
     min-height: 100%;
-    padding: 66px 65px 36px;
+    padding: 66px 55px 36px;
     background-color: #0a090a;
     text-align: left;
     overflow: hidden;
@@ -188,7 +188,7 @@ label {
   text-align: center;
   width: 100px; }
   .menu-main li a {
-    color: #999;
+    color: #fff;
     padding: 0px 12px 0px 12px;
     line-height: 50px;
     display: block;
@@ -498,6 +498,11 @@ label {
     margin: 0 15px; }
 
 .introduce {
+  animation: aniName 1s;
+  -moz-animation: aniName 1s;
+  -webkit-animation: aniName 1s;
+  -o-animation: aniName 1s;
+  position: relative;
   padding: 50px 0; }
   .introduce__title h3 {
     font-size: 25px;
@@ -561,6 +566,13 @@ label {
       font-size: 14px; }
       .grid-hover .grid-hover__text a:hover {
         color: #c59d5f; }
+
+.home-icons-group {
+  animation: aniName 1s;
+  -moz-animation: aniName 1s;
+  -webkit-animation: aniName 1s;
+  -o-animation: aniName 1s;
+  position: relative; }
 
 .home__icon {
   text-align: center;

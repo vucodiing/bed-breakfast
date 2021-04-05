@@ -277,26 +277,6 @@ $(function () {
   });
 });
 
-// rating
-
-$(function () {
-  $("#accommodation").barrating({
-    theme: "fontawesome-stars",
-  });
-  $("#meals").barrating({
-    theme: "fontawesome-stars",
-  });
-  $("#transport").barrating({
-    theme: "fontawesome-stars",
-  });
-  $("#destination").barrating({
-    theme: "fontawesome-stars",
-  });
-  $("#overall").barrating({
-    theme: "fontawesome-stars",
-  });
-});
-
 // toggle comment in blog detail page
 $("#reply-01").click(function () {
   $("#for-reply-01").toggle(300);

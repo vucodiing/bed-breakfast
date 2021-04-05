@@ -21,3 +21,23 @@ $("#input-rooms").click(function () {
   let a = $("#input-rooms").val();
   $("#price").html(a);
 });
+
+// rating
+
+$(function () {
+  $("#accommodation").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#meals").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#transport").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#destination").barrating({
+    theme: "fontawesome-stars",
+  });
+  $("#overall").barrating({
+    theme: "fontawesome-stars",
+  });
+});
